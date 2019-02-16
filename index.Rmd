@@ -12,7 +12,7 @@ source("analysis.R")
 
 # Summary
 
-`r how_many_shootings` shootings occurred in the United States in 2018. `r lives_lost` lives were lost due to these shootings. `r most_impact_city` was the city where a shooting acculumated the most deaths and injuries. `r most_impacted_state` was the state where a shooting acculumated the most deaths and injuries 
+`r how_many_shootings` shootings has occurred in the United States in 2018. `r lives_lost` lives were lost due to these shootings. `r most_impact_city` was the city where a shooting acculumated the most deaths and injuries. `r most_impacted_state` was the state where a shooting acculumated the most deaths and injuries 
 
 # Parkland Shooting
 The Parkland shooting took place in `r parkland$city`, `r parkland$state` on `r parkland$date`. `r parkland$num_killed` people were killed in the shooting and `r parkland$num_injured` people were injured. For more information, check out the New York Times articles on the one year anniversity https://www.nytimes.com/2019/02/13/us/parkland-anniversary-marjory-stoneman-douglas.html. 
