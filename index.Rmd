@@ -1,0 +1,42 @@
+---
+title: "Index"
+author: "Keivon Gunn"
+date: "2/14/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("analysis.R")
+```
+
+# Summary
+
+`r how_many_shootings` shootings occurred in the United States in 2018. `r lives_lost` lives were lost due to these shootings. `r most_impact_city` was the city where a shooting acculumated the most deaths and injuries. `r most_impacted_state` was the state where a shooting acculumated the most deaths and injuries 
+
+# Parkland Shooting
+The Parkland shooting took place in `r parkland$city`, `r parkland$state` on `r parkland$date`. `r parkland$num_killed` people were killed in the shooting and `r parkland$num_injured` people were injured. For more information, check out the New York Times articles on the one year anniversity https://www.nytimes.com/2019/02/13/us/parkland-anniversary-marjory-stoneman-douglas.html. 
+
+# Summary Table
+
+Summarizes the raw data by state's median, mean and sum of the people affected physical, injured or killed, by the shootings.
+
+```{r table, echo = FALSE}
+              kable(summary_table)
+```
+
+# Chart
+
+The Scatter plot shows the top ten states with the highest death counts from shootings. I chose this chart becuase it quickly illustrates the the death counts in each of these states, 
+
+```{r p, echo = FALSE}
+p
+```
+
+# Interactive Map
+The interactive of the shootings across the United States that displays the amount of people killed, injured and what city it was in.
+
+```{r map, echo= FALSE}
+map
+```
+ 
